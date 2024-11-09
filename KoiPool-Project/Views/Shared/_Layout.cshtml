@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt thi công hồ cá Koi</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="~/css/Style.css">
+    <script defer src="~/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/c781fd97e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <i class="fa fa-phone"></i> 0902 520 536
+        </div>
+        <div class="top-bar-right">
+
+            <a href="#"><i class="fa fa-file-text-o"></i> Điều khoản chính sách</a> |
+            <a href="#"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a>
+            @if (User.Identity?.IsAuthenticated ?? false)
+            {
+                <a asp-controller="PersonalProfile" asp-action="Index" style="cursor: pointer"><i class="fa-solid fa-user"></i>@User.Identity.Name</a>
+                <a asp-controller="Account" asp-action="Logout"><i class="fa-solid fa-right-from-bracket"></i>Đăng xuất</a>
+
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Login"><i class="fa fa-user"></i> Đăng Nhập</a>
+                <a asp-controller="Account" asp-action="Create"><i class="fa fa-user-plus"></i> Đăng Ký</a>
+            }
+            <a href="#"><i class="fab fa-facebook facebook-icon"></i></a>
+            <a href="#"><i class="fab fa-twitter twitter-icon"></i></a>
+            <a href="#"><i class="fab fa-youtube youtube-icon"></i></a>
+
+        </div>
+    </div>
+    <header>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Logo">
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Dự Án</a></li>
+                <!-- Dropdown for Dịch vụ -->
+                <li class="navbar-dropdown">
+                    <a href="#" class="dropdown-toggler">Dịch vụ<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Thiết kế và thi công hồ cá KOI</a></li>
+                    </ul>
+                </li>
+                <!-- Dropdown for Báo Giá -->
+                <li class="navbar-dropdown">
+                    <a href="#" class="dropdown-toggler">Báo Giá<i class="fa fa-angle-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Báo giá thiết kế hồ cá KOI</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Đặt Dịch Vụ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+        <pre> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </pre>
+    </main>
+
+
+
+
+
+    <!-- Footer Section -->
+    <section class="features">
+        <!-- Phần công ty -->
+        <div class="featurecard">
+            <img src="Logo.png" alt="Company Logo">
+            <h3>CTY KIẾN TRÚC CẢNH QUAN</h3>
+            <br>
+            <p><i class="fas fa-map-marker-alt"></i> Studio: 439 Kha Vạn Cân, Hiệp Bình Chánh, TP. Thủ Đức</p>
+            <p><i class="fas fa-building"></i> Văn phòng: 32 Bác Ái, Bình Thọ, TP. Thủ Đức</p>
+            <p><i class="fas fa-industry"></i> Xưởng: 255 Võ Văn Ngân, Linh Chiểu, TP. Thủ Đức</p>
+            <p><i class="fas fa-phone-alt"></i> Điện thoại: 0902 520 536</p>
+            <p><i class="fas fa-fax"></i> Số Fax: 0968 8947</p>
+            <p><i class="fas fa-envelope"></i> Email: info@kdc.com</p>
+            <p><i class="fas fa-id-badge"></i> Mã số doanh nghiệp: 0421586682 cấp ngày 30/10/2024</p>
+        </div>
+
+        <!-- Phần Chính sách dịch vụ -->
+        <div class="policy-section">
+            <h2>CHÍNH SÁCH DỊCH VỤ</h2>
+            <ul class="policy-list">
+                <li><i class="fas fa-check-circle"></i> Vệ sinh</li>
+                <li><i class="fas fa-check-circle"></i> Chăm sóc định kỳ</li>
+                <li><i class="fas fa-check-circle"></i> Bảo dưỡng</li>
+            </ul>
+            <br>
+            <!-- Phần Dịch vụ -->
+            <h2>DỊCH VỤ</h2>
+            <div class="services-list">
+                <a href="#">▶ Thiết kế & thi công hồ cá KOI</a>
+            </div>
+        </div>
+
+        <!-- Phần sản phẩm -->
+        <div class="product-section">
+            <h2>SẢN PHẨM</h2>
+            <div class="product-slider">
+                <div class="product-images">
+                    <img src="images/KOI_1.png" alt="Sản phẩm 1">
+                    <img src="images/KOI_2.png" alt="Sản phẩm 2">
+                    <img src="images/KOI_3.png" alt="Sản phẩm 3">
+                    <img src="images/KOI_4.png" alt="Sản phẩm 4">
+                    <img src="images/KOI_5.png" alt="Sản phẩm 5">
+                </div>
+            </div>
+        </div>
+        <!-- Phần Liên hệ báo giá -->
+        <div class="contact-section">
+            <h2>LIÊN HỆ BÁO GIÁ</h2>
+            <a class="hotline" href="#">HOTLINE: 0978 855 597</a>
+            <p><b>Gửi yêu cầu báo giá</b></p>
+        </div>
+    </section>
+
+    <footer>
+        <pre>CNPM Vietnam 2024  All Rights Reserved.                                                        Điều khoản sử dụng | Chính sách bảo mật | Chính sách và quy định chung</pre>
+    </footer>
+    <!--await RenderSectionAsync("Scripts", required: false);-->
+</body>
+</html>
